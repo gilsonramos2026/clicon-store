@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
+import PcImage from '../../../../assets/pc.png';
+import Celphone from '../../../../assets/celphone.png';
+import HeadPhone from '../../../../assets/headPhone.png';
 
 // Dados dos banners que passam no carrossel principal (à esquerda)
 const mainBanners = [
@@ -9,7 +12,7 @@ const mainBanners = [
     title: "Xbox Consoles",
     description: "Save up to 50% on select Xbox games. Get 3 months of PC Game Pass for $2 USD.",
     price: "$299",
-    image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=500&auto=format&fit=crop", // Imagem ilustrativa de console/controle
+    image: PcImage,
     buttonText: "SHOP NOW",
     buttonLink: "#"
   },
@@ -19,7 +22,7 @@ const mainBanners = [
     title: "PlayStation 5",
     description: "Experience lightning-fast loading with an ultra-high speed SSD and deeper immersion.",
     price: "$499",
-    image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=500&auto=format&fit=crop",
+    image: PcImage,
     buttonText: "EXPLORE",
     buttonLink: "#"
   },
@@ -29,7 +32,7 @@ const mainBanners = [
     title: "Gaming Laptops",
     description: "Discover high-performance rigs engineered with RTX graphics and powerful processors.",
     price: "$899",
-    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?q=80&w=500&auto=format&fit=crop",
+    image: PcImage,
     buttonText: "DISCOVER",
     buttonLink: "#"
   }
@@ -120,16 +123,16 @@ export function HeroBannerSection(): React.JSX.Element {
         <div className="bg-[#191c1f] dark:bg-slate-900 text-white rounded-lg p-6 flex items-center justify-between relative overflow-hidden flex-1 border border-transparent dark:border-slate-800">
           <div className="z-10 max-w-[180px]">
             <span className="text-[#ebc80c] text-[10px] md:text-xs font-bold uppercase tracking-wider block mb-1">
-              SUMMER SALES
+              verão 2026
             </span>
             <h2 className="text-xl md:text-2xl font-bold mb-3 leading-snug">
-              New Google Pixel 6 Pro
+              Novo Google Pixel 6 Pro
             </h2>
             <a 
               href="#" 
               className="inline-flex items-center gap-2 text-[#2da5f3] hover:text-sky-400 text-xs md:text-sm font-semibold transition-colors"
             >
-              SHOP NOW <ArrowRight className="w-3.5 h-3.5" />
+              COMPRAR AGORA <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
 
@@ -138,7 +141,7 @@ export function HeroBannerSection(): React.JSX.Element {
               29% OFF
             </span>
             <img 
-              src="https://images.unsplash.com/photo-1635870733900-520e181e1801?q=80&w=300&auto=format&fit=crop" 
+              src={Celphone} 
               alt="Google Pixel 6 Pro" 
               className="w-28 md:w-36 h-32 md:h-36 object-contain"
             />
@@ -164,7 +167,7 @@ export function HeroBannerSection(): React.JSX.Element {
 
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=300&auto=format&fit=crop" 
+              src={HeadPhone} 
               alt="Xiaomi FlipBuds Pro" 
               className="w-28 md:w-32 h-28 md:h-32 object-contain"
             />

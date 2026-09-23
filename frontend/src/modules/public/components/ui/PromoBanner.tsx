@@ -22,8 +22,8 @@ export function PromoBanner() {
 
       {/* Centro: Desconto exato do design original */}
       <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2 text-sm">
-        <span className="text-zinc-400 text-xs">Up to</span>
-        <span className="text-[#facc15] font-extrabold text-lg tracking-wide">59%</span>
+        <span className="text-zinc-400 text-xs">Até</span>
+        <span className="text-[#facc15] font-extrabold text-lg tracking-wide">50%</span>
         <span className="text-zinc-100 font-bold text-xs uppercase">OFF</span>
       </div>
 
@@ -33,7 +33,7 @@ export function PromoBanner() {
           href="#shop" 
           className="bg-[#facc15] hover:bg-[#eab308] text-zinc-950 font-bold text-xs px-4 py-2 rounded shadow-sm transition-all flex items-center gap-2 group cursor-pointer"
         >
-          <span>SHOP NOW</span>
+          <span>Comprar agora</span>
           <svg 
             className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" 
             fill="none" 
