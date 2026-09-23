@@ -2,6 +2,15 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { ProductCard, type ProductProps } from './ProductCard';
 
+import XboxImage from '../../../../assets/xbox.png';
+import EarbudsImage from '../../../../assets/earbuds.png';
+import SmartphoneImage from '../../../../assets/Earbuds.png';
+import TvImage from '../../../../assets/ssmatTv.png';
+import CameraImage from '../../../../assets/Camera.png';
+import MonitorImage from '../../../../assets/Monitor.png';
+import FishingMachineImage from '../../../../assets/Machine.png';
+import CarburetorImage from '../../../../assets/Carburetor.png';
+
 export function BestDealsSection(): React.JSX.Element {
   // Lista de produtos conforme a imagem de referência
   const products: ProductProps[] = [
@@ -10,7 +19,7 @@ export function BestDealsSection(): React.JSX.Element {
       title: "Xbox Series S - 512GB SSD Console with Wireless Controller - EU Version...",
       price: 442.12,
       originalPrice: 865.00,
-      image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=400&auto=format&fit=crop",
+      image: XboxImage,
       rating: 5,
       reviewsCount: 52677,
       badge: { text: "32% OFF", type: "sale" },
@@ -21,47 +30,47 @@ export function BestDealsSection(): React.JSX.Element {
       id: 2,
       title: "Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...",
       price: 2300.00,
-      image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=300&auto=format&fit=crop",
+      image: EarbudsImage,
       badge: { text: "SOLD OUT", type: "soldout" },
     },
     {
       id: 3,
       title: "Simple Mobile 4G LTE Prepaid Smartphone",
       price: 220.00,
-      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=300&auto=format&fit=crop",
+      image: SmartphoneImage,
     },
     {
       id: 4,
       title: "4K UHD LED Smart TV with Chromecast Built-in",
       price: 150.00,
       originalPrice: 865.00,
-      image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=300&auto=format&fit=crop",
+      image: TvImage,
       badge: { text: "19% OFF", type: "sale" },
     },
     {
       id: 5,
       title: "Sony DSCHX80 High Zoom Point & Shoot Camera",
       price: 1200.00,
-      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=300&auto=format&fit=crop",
+      image: CameraImage,
     },
     {
       id: 6,
       title: "Dell Optiplex 7000x7480 All-in-One Computer Monitor",
       price: 299.00,
-      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=300&auto=format&fit=crop",
+      image: MonitorImage,
     },
     {
       id: 7,
       title: "Portable Fishing Machine, 11lbs capacity Model: 18NMFIAM",
       price: 70.00,
       originalPrice: 865.00,
-      image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=300&auto=format&fit=crop",
+      image: FishingMachineImage,
     },
     {
       id: 8,
       title: "2-Barrel Carburetor Carb 2100 Engine Increase Horsepower",
       price: 160.00,
-      image: "https://images.unsplash.com/photo-1486006920555-c77dce18193c?q=80&w=300&auto=format&fit=crop",
+      image: CarburetorImage,
       badge: { text: "HOT", type: "hot" },
     },
     {
@@ -69,7 +78,7 @@ export function BestDealsSection(): React.JSX.Element {
       title: "JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black",
       price: 250.00,
       originalPrice: 360.00,
-      image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=300&auto=format&fit=crop",
+      image: CarburetorImage,
       badge: { text: "32% OFF", type: "sale" },
     },
   ];

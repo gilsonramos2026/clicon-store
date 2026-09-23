@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+import Computer from '../../../../assets/computer.png';
+import SmartPhone from '../../../../assets/SmartPhone.png';
+import Headphones from '../../../../assets/Headphones.png';
+import Accessories from '../../../../assets/Accessories.png';
+import Camera from '../../../../assets/Photo.png';
+import Tv from '../../../../assets/TV.png';
+
 interface CategoryItem {
   id: number;
   title: string;
@@ -10,33 +17,33 @@ interface CategoryItem {
 const categoriesData: CategoryItem[] = [
   {
     id: 1,
-    title: "Computer & Laptop",
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=300&auto=format&fit=crop",
+    title: "Computadores e Notebooks",
+    image: Computer,
   },
   {
     id: 2,
-    title: "SmartPhone",
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=300&auto=format&fit=crop",
+    title: "Celulares",
+    image: SmartPhone,
   },
   {
     id: 3,
-    title: "Headphones",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=300&auto=format&fit=crop",
+    title: "Fones de Ouvido",
+    image: Headphones,
   },
   {
     id: 4,
-    title: "Accessories",
-    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=300&auto=format&fit=crop",
+    title: "Accessórios",
+    image: Accessories,
   },
   {
     id: 5,
-    title: "Camera & Photo",
-    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=300&auto=format&fit=crop",
+    title: "Câmeras",
+    image: Camera,
   },
   {
     id: 6,
-    title: "TV & Homes",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=300&auto=format&fit=crop",
+    title: "Televisores",
+    image: Tv,
   },
 ];
 
@@ -57,7 +64,7 @@ export function ShopWithCategoriesSection(): React.JSX.Element {
       
       {/* Título da Secção */}
       <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white text-center mb-8">
-        Shop with Categorys
+        Categorias em Destaque
       </h2>
 
       {/* Container Principal do Carrossel */}
