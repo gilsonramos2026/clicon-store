@@ -34,7 +34,7 @@ export function PublicHeader(): React.JSX.Element {
         <div className="hidden md:flex items-center bg-white dark:bg-slate-900 rounded-md overflow-hidden w-[450px] lg:w-[550px] shadow-sm">
           <input 
             type="text" 
-            placeholder="Search for anything..." 
+            placeholder="Buscar produtos..." 
             className="w-full py-2.5 px-4 text-sm text-slate-800 dark:text-slate-100 bg-transparent focus:outline-none placeholder:text-slate-400"
           />
           <button 
@@ -75,7 +75,7 @@ export function PublicHeader(): React.JSX.Element {
                 onClick={() => setIsCategoryOpen(!isCategoryOpen)}
                 className="flex items-center gap-2 font-medium text-slate-800 dark:text-slate-100 cursor-pointer bg-slate-100 dark:bg-slate-800 px-3 py-2 rounded-md hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
               >
-                <span>All Category</span>
+                <span>Todas as Categorias</span>
                 <ChevronDown className="w-4 h-4 text-slate-500" />
               </button>
 
@@ -102,22 +102,22 @@ export function PublicHeader(): React.JSX.Element {
 
             <Link to="/track-order" className="hidden md:flex items-center gap-1.5 text-slate-600 dark:text-slate-400 hover:text-primary-500 transition-colors">
               <MapPin className="w-4 h-4 text-slate-400" />
-              <span>Track Order</span>
+              <span>Carrinho</span>
             </Link>
 
             <Link to="/compare" className="hidden md:flex items-center gap-1.5 text-slate-600 dark:text-slate-400 hover:text-primary-500 transition-colors">
               <ArrowLeftRight className="w-4 h-4 text-slate-400" />
-              <span>Compare</span>
+              <span>Comparar</span>
             </Link>
 
             <Link to="/support" className="hidden lg:flex items-center gap-1.5 text-slate-600 dark:text-slate-400 hover:text-primary-500 transition-colors">
               <Headphones className="w-4 h-4 text-slate-400" />
-              <span>Customer Support</span>
+              <span>Suporte ao Cliente</span>
             </Link>
 
             <Link to="/help" className="hidden lg:flex items-center gap-1.5 text-slate-600 dark:text-slate-400 hover:text-primary-500 transition-colors">
               <HelpCircle className="w-4 h-4 text-slate-400" />
-              <span>Need Help</span>
+              <span>Precisa de Ajuda</span>
             </Link>
           </div>
           
@@ -125,7 +125,7 @@ export function PublicHeader(): React.JSX.Element {
           <div className="flex items-center gap-4 sm:gap-6 text-sm font-medium">
             <div className="hidden xl:flex items-center gap-2 text-slate-800 dark:text-slate-200 font-semibold text-sm">
               <PhoneCall className="w-4 h-4 text-slate-700 dark:text-slate-300" />
-              <span>+1-202-555-0104</span>
+              <span>(41) 99999-9999</span>
             </div>
             
             {/* Alternador de Tema */}
@@ -143,7 +143,7 @@ export function PublicHeader(): React.JSX.Element {
               to="/admin" 
               className="bg-slate-900 dark:bg-slate-50 text-white dark:text-slate-950 px-4 py-2 rounded-lg text-xs font-semibold hover:bg-slate-800 dark:hover:bg-slate-200 transition-colors"
             >
-              Painel Admin
+              Painel Administrativo
             </Link>
           </div>
 
